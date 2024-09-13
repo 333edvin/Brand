@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 function Hero() {
   return (
@@ -21,10 +22,12 @@ function Hero() {
             Innovative Web Solutions for a Digital World
           </h1>
           <p className="text-sm text-white">We are Creative Web Development Agency</p>
-          <button className="relative px-6 py-2 font-semibold text-white uppercase transition-transform duration-200 border border-cyan-500 rounded shadow-lg hover:scale-105 focus:outline-none z-30">
+          <Link href={'/contact'} className="">
+          <button className="relative mt-5 px-6 py-2 font-semibold text-white uppercase transition-transform duration-200 border border-cyan-500 rounded shadow-lg hover:scale-105 focus:outline-none z-30">
             Let&apos;s Get Digital
             <span className="absolute inset-0 rounded blur-lg opacity-75 bg-cyan-500 animate-pulse z-10"></span>
           </button>
+          </Link>
         </div>
         {/* Optional overlay for better text readability */}
         <div className="absolute inset-0 md:bg-black/50 bg-black/20 z-10"></div>

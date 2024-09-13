@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import logo from '../../../public/images/logo-word.jpeg'
 import head from '../../../public/images/logo2.png'
-import logo3 from '../../../public/images/logo3.png'
+import logo3 from '../../../public/images/logo3.jpeg'
 import React, { useState } from 'react'
 import { RiWhatsappFill } from "react-icons/ri";
 import { AiFillInstagram } from "react-icons/ai";
@@ -51,9 +51,9 @@ function Header() {
               </svg>
             </button>
           </div>
-          <div className=" h-full pb-10 space-y-44 ">
-            <div className="flex flex-col justify-center items-center">
-            <Image src={logo3} alt="conveb-logo-name" className="w-48"/>
+          <div className=" h-full pb-10  ">
+            <div className="flex flex-col justify-center items-center text-center">
+            <Image src={logo3} alt="conveb-logo-name" className="w-full"/>
             <ul className="">
               <li className="p-4 border-b">
                 <Link href="/" className="text-gray-700" onClick={closeDrawer}>Home</Link>
@@ -69,8 +69,8 @@ function Header() {
               </li>
             </ul>
             </div>
-            <div className='text-black p-3 my-5 text-center text-xs'>
-              <p style={{borderBottom:"1px solid black"}}>CONTACT INFO</p>
+            <div className='text-black p-3 my-5 text-center text-xs space-y-2 mt-28'>
+              <p className="border-b py-2" >CONTACT INFO</p>
               <p>&nbsp;Thrissur, Kerala, India</p>
               <p>&nbsp;info@conveb.com</p>
               <br/>

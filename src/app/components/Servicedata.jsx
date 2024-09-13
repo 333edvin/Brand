@@ -6,25 +6,25 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 const services = [
     {
       title: "Web Designing",
-      photo: '/images/design.png',
+      photo: '/images/webdesigning.webp',
       alt: "Web Development Design",
       description: "Expert Web Designing services to transform your online presence. Stunning, user-friendly, and responsive websites that drive results.",
     },
     {
       title: "Web Development",
-      photo: '/images/development.png',
+      photo: '/images/webdevelop.webp',
       alt: "SEO Optimization",
       description: "Bring your website to life with our expert Web Development services. Custom solutions, seamless functionality, and scalable technology to drive your online success.",
     },
     {
       title: "Marketing",
-      photo: '/images/marketing.png',
+      photo: '/images/marketing.webp',
       alt: "Content Creation",
       description: "Boost your brand's visibility and drive results with our strategic Marketing services. Expert solutions for digital marketing, branding, and lead generation to grow your business.",
     },
     {
       title: "SEO Optimization",
-      photo: '/images/seo.png',
+      photo: '/images/seo.webp',
       alt: "Social Media Marketing",
       description: "Boost search engine rankings, drive organic traffic, and grow your online visibility with our expert SEO Optimization services and tailored strategies.",
     },
@@ -54,17 +54,20 @@ export default function ServiceData(){
                     </p>
                 </div>
                 {openIndex === index && (
-                  <div className="flex flex-row gap-5 mt-4 text-white shadow-lg ">
-                    <Image
-                      src={service.photo}
-                      alt={service.alt}
-                      width={100}
-                      height={100}
-                      className="object-cover h-auto"
-                    />
-                    <p className="mt-2  text-sm">{service.description}</p>
-                  </div>
-                )}
+                    <div className="flex flex-col lg:flex-row gap-5 mt-4 text-white shadow-lg">
+                      <Image
+                        src={service.photo}
+                        alt={service.alt}
+                        width={200}
+                        height={200}
+                        className="object-cover w-full lg:w-1/3 h-auto"
+                      />
+                      <p className="mt-2 text-sm lg:text-base lg:mt-0 lg:ml-4">
+                        {service.description}
+                      </p>
+                    </div>
+                  )}
+
               </div>
             ))}
           </div>

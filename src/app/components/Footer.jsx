@@ -93,8 +93,7 @@ function Footer() {
           </div>
         </div>
       </div>
-
-      <div className="bg-slate-900 py-4 md:py-0">
+      <div className="bg-[#060606] py-4 md:py-0 border-t border-white/10">
         <div className="flex flex-col md:flex-row justify-between items-center mx-auto px-10">
           <Image src={logoname} alt="conveb-logoname" className="w-20 md:w-18" />
           <p className="text-slate-500 text-xs  mt-4 md:mt-0">
@@ -102,6 +101,7 @@ function Footer() {
           </p>
         </div>
       </div>
+
     </>
   );
 }
