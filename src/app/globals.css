@@ -2,26 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body{
+  background-color: rgb(2, 2, 2);
+  color: aliceblue;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* styles/globals.css */
+
+.serv-container {
+  position: relative;
+}
+/* styles/globals.css */
+
+
+
+.about {
+  position: relative;
+  z-index: 1; /* This will be below the service section */
+}
+
+.service {
+  position: relative;
+  z-index: 2; /* This will overlap the about section */
+}
+
+.process,
+.action {
+  position: relative;
+  z-index: 0; 
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-fadeIn {
+  animation: fadeIn 0.1s ease-in-out ;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+.gradient-background {
+  background: linear-gradient(to right, #adadad, #010101)!important;
 }
+
+
+
+.text-gradient{
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
