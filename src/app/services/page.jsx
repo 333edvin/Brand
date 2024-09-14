@@ -17,7 +17,7 @@ function page() {
     <>
       <div className="pt-10 flex flex-col justify-center items-center text-center gap-3">
         <h1 className=" text-xl md:text-3xl mt-10">
-          More About <span className="font-bold text-cyan-200 text-2xl md:text-4xl">CONVEB</span>
+          Services
         </h1>
         <Breadcrump page='Services'/>
       </div>

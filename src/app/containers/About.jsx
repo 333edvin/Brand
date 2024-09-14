@@ -10,7 +10,7 @@ function About() {
             <div>
                 <Image src={about} alt="about" className="w-full object-cover"/>
             </div>
-            <div className="relative  md:right-20 right-none flex flex-col justify-center items-end text-end  px-5 ">
+            <div className="relative  md:right-20 right-none flex flex-col justify-center items-end text-end  p-5 ">
                 <div className=' text-3xl md:text-5xl flex flex-col gap-3'>
                       <div className="flex flex-row">
                         <DynamicSlide delay={0.5}> <span className='text-cyan-100'>Design,</span></DynamicSlide>

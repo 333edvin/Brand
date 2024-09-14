@@ -23,9 +23,9 @@ function Hero() {
           </h1>
           <p className="text-sm text-white">We are Creative Web Development Agency</p>
           <Link href={'/contact'} className="">
-          <button className="relative mt-5 px-6 py-2 font-semibold text-white uppercase transition-transform duration-200 border border-cyan-500 rounded shadow-lg hover:scale-105 focus:outline-none z-30">
+          <button className="relative mt-5 px-6 py-2 font-semibold text-white uppercase bg-transparent transition-transform duration-200 border border-cyan-500 rounded shadow-lg hover:scale-105 focus:outline-none z-30">
+            <span className="absolute inset-0 rounded blur-lg opacity-75 bg-cyan-500 animate-pulse z-10 "></span>
             Let&apos;s Get Digital
-            <span className="absolute inset-0 rounded blur-lg opacity-75 bg-cyan-500 animate-pulse z-10"></span>
           </button>
           </Link>
         </div>

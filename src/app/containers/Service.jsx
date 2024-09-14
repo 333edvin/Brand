@@ -6,7 +6,7 @@ function Service() {
 
 
   return (
-    <div className="p-5 md:p-20 pt-28 bg-black">
+    <div className="p-5 pt-10 md:p-20  bg-black">
       <p className="text-xs md:tetx-sm font-semibold text-cyan-500">Our Services</p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
       <div className='flex justify-end items-end'>

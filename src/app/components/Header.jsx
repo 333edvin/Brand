@@ -28,7 +28,7 @@ function Header() {
             <Image src={logo} alt="logo" className="w-32 object-cover my-3"/>
           </div>
           <div className="sm:hidden border-b border-slate-500">
-            <button onClick={toggleDrawer} className="text-white focus:outline-none m-6">
+            <button onClick={toggleDrawer} className="text-white focus:outline-none m-6 bg-transparent">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
               </svg>
@@ -45,7 +45,7 @@ function Header() {
       <div className={`fixed inset-0 bg-gray-800 bg-opacity-50 z-50 transform ${drawerOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out sm:hidden`}>
         <div className="bg-white w-64 h-full shadow-xl absolute right-0">
           <div className="p-4">
-            <button onClick={toggleDrawer} className="text-gray-700 focus:outline-none">
+            <button onClick={toggleDrawer} className="text-gray-700 focus:outline-none bg-transparent">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
